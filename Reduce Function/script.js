@@ -20,3 +20,21 @@ function sum(prevResult , currentValue)
 let res = arr.reduce(sum);
 
 console.log(res);
+
+
+/**
+ * let say we add many items in carts then total price of added item will be calculated,
+ * Cart - [{price : 10000, name : "iphone"} , {price : 50000 , name "case"} , {price : 50000 , name : "dopes"}];
+*/
+
+
+const cart =  [{price : 100000, name : "iphone"} , {price : 50000 , name: "case"} , 
+{price : 50000 , name : "dopes"}];
+
+function addPrices(prevResult , currentValue)
+{
+    let newPrice = prevResult.price + currentValue.price;
+    return {price :newPrice};
+}
+let totalPrices = cart.reduce(addPrices);
+console.log(totalPrices.price);
