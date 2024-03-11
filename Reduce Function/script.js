@@ -24,7 +24,7 @@ console.log(res);
 
 /**
  * let say we add many items in carts then total price of added item will be calculated,
- * Cart - [{price : 10000, name : "iphone"} , {price : 50000 , name "case"} , {price : 50000 , name : "dopes"}];
+ * Cart - [{price : 10000, name : "iphone"} , {price : 50000 , name : "case"} , {price : 50000 , name : "dopes"}];
 */
 
 
@@ -34,7 +34,7 @@ const cart =  [{price : 100000, name : "iphone"} , {price : 50000 , name: "case"
 function addPrices(prevResult , currentValue)
 {
     let newPrice = prevResult.price + currentValue.price;
-    return {price :newPrice};
+    return {price : newPrice};
 }
 let totalPrices = cart.reduce(addPrices);
 console.log(totalPrices.price);
