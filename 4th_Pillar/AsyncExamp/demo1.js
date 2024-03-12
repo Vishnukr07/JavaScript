@@ -16,7 +16,11 @@ function timeConsumingByRuntimeFeatures()
     setTimeout(function exe(){
         console.log("completed");
     },5000);
+    
 }
+setTimeout(function exe(){
+    console.log("completed2");
+},5000);
 
 console.log("hii");
 timeConsumingByLoop();
