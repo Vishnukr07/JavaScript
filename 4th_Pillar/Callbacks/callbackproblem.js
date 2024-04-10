@@ -4,12 +4,12 @@
  */
 
 // created by teamA
-function doTask(fn , x)
+function doTask(exe , x)
 // whole implementation is done by team A
 {
-    fn(x * x);
+    exe(x * x);
     // twice write the function , this will be the problem
-    fn(x * x);
+    exe(x * x);
 }
 
 // here team B tries to use it,
