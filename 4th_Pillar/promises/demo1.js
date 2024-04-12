@@ -32,8 +32,10 @@ console.log("currently my promise object is like ...." , p);
 p.then(
   function fulfillmenthandler (value){
     console.log("Inside fulfillment handler with value" , value);
+    console.log("promise after fulfillment" , p);
   } 
 , function rejectionhandler (value) {
     console.log("Inside rejection handler with value" , value);
+    console.log("promise after rejection" , p);
 });
 
